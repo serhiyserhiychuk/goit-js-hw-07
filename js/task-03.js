@@ -6,8 +6,8 @@ const span = document.querySelector("#name-output");
 function greet(name = "Anonymous") {
   if (span.textContent) {
     textInput.addEventListener("input", (event) => {
-      name = event.currentTarget.value;
-      span.textContent = name.trim();
+      name = event.currentTarget.value.trim();
+      span.textContent = name;
     });
   }
 }
